@@ -15,7 +15,7 @@ const GalleryItem = (props) => {
     'height': '20vh',
     'border': '1px solid black',
     'margin': '2px',
-    'backgroundImage': `url(${props.item.artworkUrl60})`,
+    'backgroundImage': `url()`,
     'backgroundRepeat': 'no-repeat',
     'backgroundSize': 'cover',
     'color': 'yellow'
@@ -25,6 +25,7 @@ const GalleryItem = (props) => {
   const simpleView = () => {
     return (
       <div style={simpleStyle}>
+        <img src={`${props.item.artworkUrl100}`} alt={`${props.item.collectionName} album art`} />
         <h3>{props.item.trackName}</h3>
         <h4>{props.item.collectionName}</h4>
       </div>
