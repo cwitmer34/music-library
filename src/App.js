@@ -30,7 +30,6 @@ function App() {
   }, [search]);
 
   const handleSearch = (e, term) => {
-    e.preventDefault();
     setSearch(term);
   };
 
